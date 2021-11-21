@@ -37,6 +37,5 @@ ${outputText}
 
 ## TODO
 
-- [ ] Fix the memory leak 😅
 - [ ] Add support for more functions
 - [ ] Add support for other systems (not likely to happen any time soon)

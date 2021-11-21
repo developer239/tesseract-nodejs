@@ -4,8 +4,6 @@
 
 Tesseract::Tesseract() {
   tesseract = new tesseract::TessBaseAPI();
-
-  tesseract->Init(nullptr, nullptr, tesseract::OEM_LSTM_ONLY);
 }
 
 char *Tesseract::read(const char *inputfile) {
@@ -16,9 +14,12 @@ char *Tesseract::read(const char *inputfile) {
     exit(2);
   }
 
+  // This can be done in constructor and "End" can be replaced by "Clear"
+  tesseract->Init(nullptr, nullptr, tesseract::OEM_LSTM_ONLY);
+
   tesseract->SetImage(image);
   char *outputText = tesseract->GetUTF8Text();
-  tesseract->Clear();
+  tesseract->End();
 
   return outputText;
 }

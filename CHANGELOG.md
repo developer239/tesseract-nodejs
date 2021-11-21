@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/developer239/tesseract-nodejs/compare/v1.0.0...v1.0.1) (2021-11-21)
+
+
+### Bug Fixes
+
+* n-api dependency version ([5b1551e](https://github.com/developer239/tesseract-nodejs/commit/5b1551ed63db2deae3693125e9319e8d9d6a8cc1))
+
 # 1.0.0 (2021-11-21)
 
 

@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    runs-on: macos-11
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -15,7 +15,7 @@ jobs:
           node-version: 14
           registry-url: https://registry.npmjs.org
 
-      - run: yarn install
+      - run: yarn install --ignore-scripts
 
       - run: npx semantic-release
         env:

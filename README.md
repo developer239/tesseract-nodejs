@@ -1,5 +1,7 @@
 # Tesseract Node.js
 
+[![npm version](http://img.shields.io/npm/v/tesseract-nodejs.svg?style=flat)](https://www.npmjs.com/package/tesseract-nodejs "View this project on npm")
+
 Node bindings for Tesseract OCR library. Currently, only supports Mac.
 
 ## Dependencies
@@ -13,7 +15,7 @@ brew install tesseract
 All you have to do after that is to install this library with `yarn` or `npm`.
 
 ```
-yarn install tesseract-nodejs
+yarn add tesseract-nodejs
 ```
 
 ## Example
